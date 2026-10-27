@@ -1,0 +1,14 @@
+.......[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+.[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+.[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+.[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+.................s.......................x......................................................................................................s.......................x..........................................................s.................................................................................sssssss
+============================== warnings summary ===============================
+tests/cloudpickle_test.py::CloudPickleTest::test_itertools_count
+tests/cloudpickle_test.py::Protocol2CloudPickleTest::test_itertools_count
+  F:\Github-PR\inspection\oct27-ai-cloudpickle509\cloudpickle\cloudpickle.py:1372: DeprecationWarning: Pickle, copy, and deepcopy support will be removed from itertools in Python 3.14.
+    return super().dump(obj)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+314 passed, 10 skipped, 2 xfailed, 2 warnings in 54.18s

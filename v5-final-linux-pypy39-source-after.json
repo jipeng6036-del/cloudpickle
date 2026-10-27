@@ -1,0 +1,266 @@
+{
+  "matched": 65,
+  "manifest": "/evidence/candidate-manifest.json",
+  "files": [
+    {
+      "path": ".coveragerc",
+      "sha256": "ce60d14b9a1b54b024ba9261c58ca239b032f3d1421c064566681156e8306425"
+    },
+    {
+      "path": ".git-blame-ignore-revs",
+      "sha256": "01ad4e2ec25f36d9f6998b37cf3fcee961fa1f59c975bd68c29cfb573e73c2ca"
+    },
+    {
+      "path": ".github/scripts/install_downstream_project.sh",
+      "sha256": "ccef29fa0f17380da6ab0c500425ad6c582c52202f9307c35349eb1073983bfb"
+    },
+    {
+      "path": ".github/scripts/test_downstream_project.sh",
+      "sha256": "0a24bcd35e0a5d7ca17e6c90a20421e575c117cdaa763f16fafa1bcf7742fe7b"
+    },
+    {
+      "path": ".github/workflows/publish_to_pypi.yml",
+      "sha256": "433ebb45917be509b1510111de5769188eca6f9a0d87803867790800bce9dfa7"
+    },
+    {
+      "path": ".github/workflows/testing.yml",
+      "sha256": "166b3e21f3517dac21ada9772221ea9af7f6e6188c1e3094078d1b915f19b5c0"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "ea1c7a0974fca112e159e834a02bae5b285fead05e24519199693a253aedbeca"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "sha256": "128c08a4b919c51dd255c1a631f892361d6a044d5bc9b626c3bca4a93c788bf9"
+    },
+    {
+      "path": "CHANGES.md",
+      "sha256": "54a30bf2e6e7cec7793a17684e1df8d8778f00e7b2c1b2c4aa89e662169d6eeb"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "3029ea34173e9fdc233ad315dc6b100bd1ea71f529b1c1af97664a272fdc55f5"
+    },
+    {
+      "path": "MANIFEST.in",
+      "sha256": "b8d3eff8ece783c2f1d2068ccc439540ce6183bd36e7fccb5cc9a2830b408a33"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7e786da677630657d1e28696ec07fdeb642626c8431b2bfc68348d48939d568e"
+    },
+    {
+      "path": "ci/install_coverage_subprocess_pth.py",
+      "sha256": "2d9aed47a6340dfe8eb2d948c726dadffc3c4a1542482d87110f52a11e818a4a"
+    },
+    {
+      "path": "cloudpickle/__init__.py",
+      "sha256": "c10a36b9ae1e6bec079c655283006e39f05d35bd95a24e1fffe98d6b9070e2a7"
+    },
+    {
+      "path": "cloudpickle/cloudpickle.py",
+      "sha256": "110be30f5da5d8c96fab6b1780d7eec890e4613e8e84b1c5a3b63fc4e65e2f77"
+    },
+    {
+      "path": "cloudpickle/cloudpickle_fast.py",
+      "sha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357"
+    },
+    {
+      "path": "codecov.yml",
+      "sha256": "4baf669ac1c04fbcc8c6ea4d0a5510bf55df5d1e88f887d6c24a4501da7370af"
+    },
+    {
+      "path": "dev-requirements.txt",
+      "sha256": "abbc9a8dc316cb3cac648c8881a3825655c847df08ae29a8378a7e46a75c8d6c"
+    },
+    {
+      "path": "dev/make-distribution.sh",
+      "sha256": "d42a25a590b9255ef00af5fc02809490813ce1a0d240e1161ec3bd337d98cf38"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "75ec0fb28204a0a1ce923bc263bf684956316877b9dccb13c37083b2303b0641"
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "1f188f29e3cd3f81585fcf5b4375835206d2e273d97a48bb546d23ee8a6435c3"
+    },
+    {
+      "path": "tests/cloudpickle_file_test.py",
+      "sha256": "149b69d806d2653766e932f574ad33fbe25b60d30a65cccf062985ed54e5067f"
+    },
+    {
+      "path": "tests/cloudpickle_ipykernel_test.py",
+      "sha256": "39bbcd60ddc41e08c81cfa03ae5630caf0b7105e526bf0ef20bb396503efab42"
+    },
+    {
+      "path": "tests/cloudpickle_test.py",
+      "sha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9"
+    },
+    {
+      "path": "tests/cloudpickle_testpkg/_cloudpickle_testpkg/__init__.py",
+      "sha256": "a02078bf9e155048f0063c13b7103da866d5095d8d896c5f27cb66af4a7711c7"
+    },
+    {
+      "path": "tests/cloudpickle_testpkg/_cloudpickle_testpkg/mod.py",
+      "sha256": "a660f0969b3c46dc6ca1f4e792192a6cfa3a087fc9feb8f18d77d0e5130e3390"
+    },
+    {
+      "path": "tests/cloudpickle_testpkg/setup.py",
+      "sha256": "036e802510efaef8816c678ed984cc42a424371a6f97010af8a4f970e2036025"
+    },
+    {
+      "path": "tests/generate_old_pickles.py",
+      "sha256": "1e45b7b9a1b5c3b00dfc89238b84c8ccf346285e00edc82a58dd571034ff5bdb"
+    },
+    {
+      "path": "tests/mock_local_folder/mod.py",
+      "sha256": "50b66fc5f632fa40248d6e25dcec5056e81ed1560d346b9fde360cfb0876908f"
+    },
+    {
+      "path": "tests/mock_local_folder/subfolder/submod.py",
+      "sha256": "88ba81b886ad1c04b76d6fdc8ba83438acd3b52873ac08deeef49ac7fac114f9"
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/class_with_type_hints.pkl",
+      "sha256": "80c6299acf3d29c59b50b1a306188a9e149237145a899b3a92122aa2b4c1c3cd"
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/cloudpickle_version.txt",
+      "sha256": "fe650098093fad42070e8a2cacfb216a6c416af57bd26dd6ff479fef69f8bc71"
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/function_with_type_hints.pkl",
+      "sha256": "042cc4d494d827ea4f4686bb0034e4018dc8a780f66fc7b5796ad588a41c0496"
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/nested_function.pkl",
+      "sha256": "5a9d48eae61e8c722b1f412387d1a6d1b45d2f2873fb30ae02082c2a954cdf8e"
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/simple_class.pkl",
+      "sha256": "af469d1e563251e72cd95563a38142858a8698a7876df435d9a0073975d085ac"
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/simple_enum.pkl",
+      "sha256": "ed61c29d89a26de246f98d06579ea5638bd0ac7397ae5abaef881f05b4a39471"
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/simple_func.pkl",
+      "sha256": "27edd3c50fdf5b3f57b5912ef8e658b414a0084bbf53ca0dd2739435752920a4"
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/simple_module.pkl",
+      "sha256": "6859732d244ccfc8ba22ac7c9db674ac05bb5ba567a7b2f21dabd43017f0ffb5"
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/class_with_type_hints.pkl",
+      "sha256": "810d5b064e77c1af2e014860849f9257f375b011480747cb600789d934a4eac8"
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/cloudpickle_version.txt",
+      "sha256": "fe650098093fad42070e8a2cacfb216a6c416af57bd26dd6ff479fef69f8bc71"
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/function_with_type_hints.pkl",
+      "sha256": "773a8077aa5f3687b809dad6db531347091397de25074f69c14d1ff082db817a"
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/nested_function.pkl",
+      "sha256": "0fbc75c857af0f08a5e4d55f71b82a562028039af4de3b0c7f1378a8ccd6f4e2"
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/simple_class.pkl",
+      "sha256": "88a731d557a5380878f355ffbb953866641a29278a3e9f38e316384deb3878dd"
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/simple_enum.pkl",
+      "sha256": "98d1f8f38ac4ad9e246b33b3f84e94a488f410df97a69d92185be08a63300df1"
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/simple_func.pkl",
+      "sha256": "f5e6c551f70e1038ce7a69c1215f4e12a8abcbcae78f5ca373697b7dfc23bff7"
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/simple_module.pkl",
+      "sha256": "e6d8ebaaf87df6ff8bd31b3d800a274eb214c43604b420eec8f4ec8bb82fc4d8"
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/class_with_type_hints.pkl",
+      "sha256": "235042d4e1de6726716b1fade172ede91976e221db50b42c965f42b3abe47f16"
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/cloudpickle_version.txt",
+      "sha256": "7d072b48526b023950e4c48db01e8c273554a6401119f5691e7589ba9bc65d9d"
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/function_with_type_hints.pkl",
+      "sha256": "15ed26ed960ab65f208a0e52efd78dd9a54277ca81a96c1a2ff192417097833a"
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/nested_function.pkl",
+      "sha256": "a9c31055c4487cac92dcf3d8fe38005ada101310d5909227bdc30ea0afefd1c8"
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/simple_class.pkl",
+      "sha256": "66fc938e13840fe2c4ae2709e24b75913e8bfd5335d37596dab18aa17d7ab59f"
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/simple_enum.pkl",
+      "sha256": "bb189bca42e1c9614752826e17e4b633e4430491ef92f8f4f51d9040deab2196"
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/simple_func.pkl",
+      "sha256": "b48791d501ca0f2262de975c1caae00a5d2001d5641b3baf85656027b03d845f"
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/simple_module.pkl",
+      "sha256": "53c8aa261daeed33eb069f3900aebd422fa940f74639f4520fb534763a04d594"
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/class_with_type_hints.pkl",
+      "sha256": "7eaf4c52d15b662b7c083d2a68666aab3f09b03fa3ea456afbdea83357847d64"
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/cloudpickle_version.txt",
+      "sha256": "7d072b48526b023950e4c48db01e8c273554a6401119f5691e7589ba9bc65d9d"
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/function_with_type_hints.pkl",
+      "sha256": "27f6b1f5dac280e30452b825584dc4962cf15ebbd7995c7db641905258339d32"
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/nested_function.pkl",
+      "sha256": "f9ed3bd0fa32888077e59f4d4e3f17be86238e5fe785c90e76b4fd7f72fa97b4"
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/simple_class.pkl",
+      "sha256": "c264c7b96851258125bc5408b81507a40748f8dbf1acc5ed8b85f779b6569e6e"
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/simple_enum.pkl",
+      "sha256": "42db1a618885d4835b966648ff815e6263f5921984fdf6a10f3f5134210e6088"
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/simple_func.pkl",
+      "sha256": "c7846630f75ae98f853f9313e3a8ee02ebd1173669cc675b328e50394eaa67e0"
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/simple_module.pkl",
+      "sha256": "53c8aa261daeed33eb069f3900aebd422fa940f74639f4520fb534763a04d594"
+    },
+    {
+      "path": "tests/test_backward_compat.py",
+      "sha256": "b9ed82e7e38ebb09c0c3dc609c0fd18ba274d9ecc001fdb25204e1735c2771a7"
+    },
+    {
+      "path": "tests/testutils.py",
+      "sha256": "2f18efa7374e752619f7ce2c12faee1557d34637bef0fa38e8ae34c6734aad1e"
+    },
+    {
+      "path": "tox.ini",
+      "sha256": "97f48a9a0892b07925429c434cdc692213ad0ee9490af337c549ef36a450484b"
+    }
+  ]
+}

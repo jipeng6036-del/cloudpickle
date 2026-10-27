@@ -1,0 +1,39 @@
+{
+  "steps": [
+    {
+      "step": "export",
+      "exit": 0
+    },
+    {
+      "step": "build",
+      "exit": 0
+    },
+    {
+      "step": "install",
+      "exit": 0
+    },
+    {
+      "step": "consumer",
+      "exit": 0
+    }
+  ],
+  "wheelSha256": "04abe1086038c7e6e7a65fb8d1ba868b5d26f5c6ce4cc22bdcca6e39474a79f1",
+  "sdistSha256": "8c789321a691a940d9dab6e010551bc730448de0caa39487bfc9712dfd73f35d",
+  "packagedSources": [
+    {
+      "path": "cloudpickle/__init__.py",
+      "sha256": "c10a36b9ae1e6bec079c655283006e39f05d35bd95a24e1fffe98d6b9070e2a7",
+      "matchesGitAndInstalled": true
+    },
+    {
+      "path": "cloudpickle/cloudpickle.py",
+      "sha256": "110be30f5da5d8c96fab6b1780d7eec890e4613e8e84b1c5a3b63fc4e65e2f77",
+      "matchesGitAndInstalled": true
+    },
+    {
+      "path": "cloudpickle/cloudpickle_fast.py",
+      "sha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357",
+      "matchesGitAndInstalled": true
+    }
+  ]
+}

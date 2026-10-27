@@ -1,0 +1,143 @@
+{
+  "reviewedAt": "2026-10-27T10:39:07.988471+00:00",
+  "scope": "Independent read-only design review of Cloudpickle issue509 candidate; no product edits, long matrix reruns, network or public writes.",
+  "baseHead": "4af5936c328de0b33fa9c636e210d9a9e1e97dd3",
+  "checkout": "F:\\Github-PR\\inspection\\oct27-ai-cloudpickle509",
+  "sourceSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+  "testsSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1",
+  "disposition": "NO_REMAINING_CONFIRMED_DESIGN_BLOCKER_AT_FROZEN_SOURCE; full interpreter matrix pending for this exact new hash",
+  "historicalFindings": [
+    {
+      "case": "sync_wrapper_factory_side_effect",
+      "classification": "BUG_REPRODUCED",
+      "evidence": "probes-initial.json",
+      "explanation": "Raw status PASS only means the probe executed; equivalent=false proves the candidate added an extra construction side effect after loading. Historical raw output retained unchanged."
+    },
+    {
+      "case": "async_wrapper_factory_side_effect",
+      "classification": "BUG_REPRODUCED",
+      "evidence": "probes-initial.json",
+      "explanation": "Same extra wrapper construction side effect, not a semantic PASS."
+    },
+    {
+      "case": "CPython311_async_factory_with_closure",
+      "classification": "BUG_REPRODUCED_BY_IMPLEMENTATION_OWNER_AND_FIXED",
+      "evidence": "../discovery-20261027-ai/contextmanager-py311.xml",
+      "explanation": "Fresh async generator f_lasti=2 after COPY_FREE_VARS, so initial hardcoded (-1,0) was incorrect. Candidate now recognizes RETURN_GENERATOR opcode on the older inspect path."
+    },
+    {
+      "case": "partial_subclass_and_duck_function_like_factory",
+      "classification": "BUG_REPRODUCED",
+      "evidence": "factory-boundaries-initial.json",
+      "assertedCases": 8,
+      "explanation": "inspect.isgeneratorfunction/isasyncgenfunction return True for callables whose __call__ executes arbitrary construction effects. All sync/async, protocol2/5 cases add a second construct on loads. Previous no-blocker disposition superseded.",
+      "resolution": "FIXED at frozen hash: exact functools.partial chains, native MethodType then FunctionType, genuine code generator flags. Former8 counterexamples rejected; native16 controls accepted."
+    },
+    {
+      "case": "preexisting_pickleable_iterator_contextmanager",
+      "classification": "COMPATIBILITY_REGRESSION_REPRODUCED_BY_ROOT",
+      "evidence": "root-pickleable-iterator-regression.json",
+      "explanation": "contextmanager(lambda:iter([7])) roundtrip/with succeeds at exact base, but initial candidate assumes every non-sync-gen has async-gen attributes and raises AttributeError. Replacing this with PicklingError would still regress supported behavior. Preserve generic original object reduction for non-native generator/async-generator iterators.",
+      "resolution": "FIXED at frozen hash: non-native generator/async-generator iterators retain object.__reduce_ex__(obj,4) generic reduction before any generator-specific attribute access. Actual integrated8-case proof includes positions/effects/cycles; implementation regression includes unentered/entered/closed custom iterator states."
+    }
+  ],
+  "fixedProof": {
+    "evidence": "probes-frozen.json",
+    "explicitAssertions": 8,
+    "allAssertionsPassed": true,
+    "protocols": [
+      2,
+      5
+    ],
+    "python": "CPython3.13.12 Windows",
+    "wrapperFactoryCases": "REJECTED_AS_EXPECTED",
+    "partialFactoryCases": "SAFE_FACTORY_AND_STATE_GUARDS_PASS",
+    "covers": [
+      "sync and async genuine generator factories",
+      "functools.partial factory",
+      "shared mutable positional/keyword alias",
+      "custom state self reference",
+      "body not run by dump/load",
+      "entered, closed, preclosed and independently advanced gen rejection"
+    ],
+    "notClaimed": "These short probes do not establish all supported interpreters or a broad resource security guarantee.",
+    "sourceSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911"
+  },
+  "cycles": {
+    "disposition": "NO_BUG_REPRODUCED",
+    "evidence": "probes-initial.json",
+    "cases": [
+      "positional mutable holder",
+      "kwargs dictionary",
+      "factory closure cycle",
+      "custom self state"
+    ],
+    "reasoning": "Simple constructor-based reduce handles tested cycles via pickle recursive memoization; no evidenced need for a custom setstate helper. Candidate regression additionally exercises WeakSet self reference."
+  },
+  "versionBoundaries": {
+    "syncState": "inspect.getgeneratorstate",
+    "async312plus": "inspect.getasyncgenstate",
+    "asyncPre312": "frame initial -1 or current opcode RETURN_GENERATOR; CPython3.11 closure offset covered by implementation tests, PyPy requires its actual matrix result",
+    "stdlibAsyncDecorator": "3.8/3.9 lack asynccontextmanager decorator capability. Only that decorator subcase skips; direct async CM state and cycles remain required.",
+    "plainGenerators": "Ordinary generator/async-generator pickling remains unsupported; candidate adds regression coverage.",
+    "matrix": "PENDING for frozen5b08349f... source: implementation owner rerunning all8 interpreter full suites; prior hashes are not attributed to this final candidate."
+  },
+  "admission": {
+    "repository": "cloudpipe/cloudpickle",
+    "cachedStars": 1947,
+    "issue509": "2023-07-06, no assignees, maintainer reproduced; production references Dask/distributed7954 and Prefect17754",
+    "openPrSearch": "30 OPEN PR nodes, hasNextPage=false, cached search found no issue509/contextmanager duplicate",
+    "localRules": "No repository AGENTS/CONTRIBUTING/AI_POLICY discovered in read checkout; org default query HTTP404 means unavailable public content, not evidence of permission or prohibition.",
+    "policyEvidence": [
+      "../discovery-20261027-ai/cloudpickle.json",
+      "../discovery-20261027-ai/cloudpickle509-timeline.json",
+      "../discovery-20261027-ai/cloudpipe-org-defaults.json"
+    ]
+  },
+  "activity": {
+    "latestActualMergedPr": 599,
+    "mergedAt": "2026-09-10T12:17:30Z",
+    "author": "tacaswell",
+    "asOf": "2026-10-27T09:42:00Z",
+    "age": "46 days 21 hours approximately",
+    "assessment": "Maintenance evidenced about six weeks earlier. Do not describe closed-but-unmerged PR614/605/604 as merges or updatedAt as a merge date. No numeric active-window policy invented; parent decides eligibility using this evidence.",
+    "evidence": "../discovery-20261027-ai/cloudpickle-recent-merged.json"
+  },
+  "excludedActions": [
+    "product edits",
+    "long test matrix reruns",
+    "GitHub/network requests",
+    "global memory or audit edits",
+    "commit/push/PR/comment/merge/release"
+  ],
+  "previousDisposition": "NO_CURRENT_DESIGN_BLOCKER; runtime matrix verification pending with implementation owner",
+  "genericFallbackPrototype": {
+    "artifact": "generic-fallback-prototype.json",
+    "assertions": 8,
+    "allAssertionsPassed": true,
+    "implementation": "Review-only local Pickler subclass: object.__reduce_ex__(obj,4) for non-native iterators",
+    "covers": "sync/async iterator; unstarted/manually advanced position; protocol2/5; factory effect count, self custom state, positional alias and cyclic holder",
+    "boundary": "Prototype is not evidence that final worker source has integrated fallback.",
+    "supersededByActualIntegrationProof": "generic-fallback-integrated.json"
+  },
+  "testsLfSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1",
+  "currentActionableFindings": [],
+  "finalIndependentProof": {
+    "sourceSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+    "python": "CPython3.13.12 Windows",
+    "explicitCaseCount": 40,
+    "allAssertionsPassed": true,
+    "artifacts": {
+      "factory-boundaries-fixed.json": "8 former partial-subclass/duck-callable counterexamples are REJECTED_AS_EXPECTED",
+      "native-factories-fixed.json": "16 native function/bound-method/exact-partial cases preserve aliases, no early body execution, and normal with/async with semantics",
+      "generic-fallback-integrated.json": "8 actual unmodified worker-source cases preserve pickleable iterator position, construction count, args aliases and state cycles with ordinary CloudPickler",
+      "probes-frozen.json": "8 ordinary-wrapper rejection plus partial/alias/self-state and native generator entered/closed/manually-advanced rejection cases"
+    },
+    "historicalEvidence": "All initial BUG_REPRODUCED outputs are preserved unchanged; successful probe execution is not treated as semantic equivalence."
+  },
+  "reviewedFinalTests": {
+    "parameterCases": 48,
+    "scope": "subprocess decorators; native active/closed rejection; Function/Method/partial cyclic graphs; ordinary/duck/partial-subclass/_partialmethod factory rejection; ordinary generators unsupported via complete roundtrip; baseline-compatible sync/async iterator unentered/entered/closed/self-cycle controls",
+    "platformBoundary": "CPython3.8/3.9 only decorator async capability subcase skips. PyPy negative behavior asserted at full roundtrip; no unsupported generator error-text equality promised."
+  }
+}

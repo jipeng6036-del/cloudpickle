@@ -1,0 +1,10 @@
+{
+  "base": "4af5936c328de0b33fa9c636e210d9a9e1e97dd3",
+  "candidateTree": "b27ba63ebf0e35deb7b90ff88ed1953a9c71bd8e",
+  "modifiedPaths": [
+    "CHANGES.md",
+    "cloudpickle/cloudpickle.py",
+    "tests/cloudpickle_test.py"
+  ],
+  "regressionFile": "35daf2c8d87f1c0000672f80f672fad148e74e6c"
+}

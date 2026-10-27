@@ -1,0 +1,64 @@
+{
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "sourceSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+  "scope": "Actual worker source with ordinary CloudPickler; reviewer did not modify reducer or dispatch.",
+  "cases": [
+    {
+      "asynchronous": false,
+      "iteratorAdvancedBeforePickle": false,
+      "protocol": 2,
+      "classification": "FALLBACK_PRESERVES_ITERATOR_POSITION_FACTORY_COUNT_ALIAS_CYCLES",
+      "value": 7
+    },
+    {
+      "asynchronous": false,
+      "iteratorAdvancedBeforePickle": false,
+      "protocol": 5,
+      "classification": "FALLBACK_PRESERVES_ITERATOR_POSITION_FACTORY_COUNT_ALIAS_CYCLES",
+      "value": 7
+    },
+    {
+      "asynchronous": false,
+      "iteratorAdvancedBeforePickle": true,
+      "protocol": 2,
+      "classification": "FALLBACK_PRESERVES_ITERATOR_POSITION_FACTORY_COUNT_ALIAS_CYCLES",
+      "value": 8
+    },
+    {
+      "asynchronous": false,
+      "iteratorAdvancedBeforePickle": true,
+      "protocol": 5,
+      "classification": "FALLBACK_PRESERVES_ITERATOR_POSITION_FACTORY_COUNT_ALIAS_CYCLES",
+      "value": 8
+    },
+    {
+      "asynchronous": true,
+      "iteratorAdvancedBeforePickle": false,
+      "protocol": 2,
+      "classification": "FALLBACK_PRESERVES_ITERATOR_POSITION_FACTORY_COUNT_ALIAS_CYCLES",
+      "value": 7
+    },
+    {
+      "asynchronous": true,
+      "iteratorAdvancedBeforePickle": false,
+      "protocol": 5,
+      "classification": "FALLBACK_PRESERVES_ITERATOR_POSITION_FACTORY_COUNT_ALIAS_CYCLES",
+      "value": 7
+    },
+    {
+      "asynchronous": true,
+      "iteratorAdvancedBeforePickle": true,
+      "protocol": 2,
+      "classification": "FALLBACK_PRESERVES_ITERATOR_POSITION_FACTORY_COUNT_ALIAS_CYCLES",
+      "value": 8
+    },
+    {
+      "asynchronous": true,
+      "iteratorAdvancedBeforePickle": true,
+      "protocol": 5,
+      "classification": "FALLBACK_PRESERVES_ITERATOR_POSITION_FACTORY_COUNT_ALIAS_CYCLES",
+      "value": 8
+    }
+  ],
+  "allAssertionsPassed": true
+}

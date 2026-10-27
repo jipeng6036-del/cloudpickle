@@ -1,0 +1,71 @@
+{
+  "sourceSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "cases": [
+    {
+      "factory": "partial_subclass",
+      "asynchronous": false,
+      "protocol": 2,
+      "inspectRecognized": true,
+      "classification": "REJECTED_AS_EXPECTED",
+      "error": "Cannot pickle a non-generator context manager factory"
+    },
+    {
+      "factory": "partial_subclass",
+      "asynchronous": false,
+      "protocol": 5,
+      "inspectRecognized": true,
+      "classification": "REJECTED_AS_EXPECTED",
+      "error": "Cannot pickle a non-generator context manager factory"
+    },
+    {
+      "factory": "function_like_callable",
+      "asynchronous": false,
+      "protocol": 2,
+      "inspectRecognized": true,
+      "classification": "REJECTED_AS_EXPECTED",
+      "error": "Cannot pickle a non-generator context manager factory"
+    },
+    {
+      "factory": "function_like_callable",
+      "asynchronous": false,
+      "protocol": 5,
+      "inspectRecognized": true,
+      "classification": "REJECTED_AS_EXPECTED",
+      "error": "Cannot pickle a non-generator context manager factory"
+    },
+    {
+      "factory": "partial_subclass",
+      "asynchronous": true,
+      "protocol": 2,
+      "inspectRecognized": true,
+      "classification": "REJECTED_AS_EXPECTED",
+      "error": "Cannot pickle a non-generator context manager factory"
+    },
+    {
+      "factory": "partial_subclass",
+      "asynchronous": true,
+      "protocol": 5,
+      "inspectRecognized": true,
+      "classification": "REJECTED_AS_EXPECTED",
+      "error": "Cannot pickle a non-generator context manager factory"
+    },
+    {
+      "factory": "function_like_callable",
+      "asynchronous": true,
+      "protocol": 2,
+      "inspectRecognized": true,
+      "classification": "REJECTED_AS_EXPECTED",
+      "error": "Cannot pickle a non-generator context manager factory"
+    },
+    {
+      "factory": "function_like_callable",
+      "asynchronous": true,
+      "protocol": 5,
+      "inspectRecognized": true,
+      "classification": "REJECTED_AS_EXPECTED",
+      "error": "Cannot pickle a non-generator context manager factory"
+    }
+  ],
+  "semanticBugCount": 0
+}

@@ -1,0 +1,488 @@
+{
+  "generatedAt": "2026-10-27T10:57:24.709928+00:00",
+  "repository": "cloudpipe/cloudpickle",
+  "issue": 509,
+  "branch": "fix/contextlib-decorator-pickling-509",
+  "frozenSource": {
+    "base": "4af5936c328de0b33fa9c636e210d9a9e1e97dd3",
+    "candidateTree": "b27ba63ebf0e35deb7b90ff88ed1953a9c71bd8e",
+    "modifiedPaths": [
+      "CHANGES.md",
+      "cloudpickle/cloudpickle.py",
+      "tests/cloudpickle_test.py"
+    ],
+    "regressionFile": "35daf2c8d87f1c0000672f80f672fad148e74e6c"
+  },
+  "sourceEncodingBridge": [
+    {
+      "path": "cloudpickle/__init__.py",
+      "windowsRawSha256": "c8dcb60fbbc27f1d46f2da823b7b25342a5ac60ff3e9e288402ff08f603fd5ed",
+      "canonicalGitLfSha256": "c10a36b9ae1e6bec079c655283006e39f05d35bd95a24e1fffe98d6b9070e2a7",
+      "rawBytes": 331,
+      "canonicalBytes": 313,
+      "crlfCount": 18,
+      "onlyCrlfToLfEqualsGit": true,
+      "gitBlob": "bc99dacd1540c235845467b7ff45c0d9ed9a4d3c"
+    },
+    {
+      "path": "cloudpickle/cloudpickle.py",
+      "windowsRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+      "canonicalGitLfSha256": "110be30f5da5d8c96fab6b1780d7eec890e4613e8e84b1c5a3b63fc4e65e2f77",
+      "rawBytes": 62691,
+      "canonicalBytes": 61080,
+      "crlfCount": 1611,
+      "onlyCrlfToLfEqualsGit": true,
+      "gitBlob": "814a1346b6a6932290319159fb7db6015825e979"
+    },
+    {
+      "path": "cloudpickle/cloudpickle_fast.py",
+      "windowsRawSha256": "9996026ddec0f65823d24301d2c5e2cadcca1434eabe07fbb1e6eecf631c6f1e",
+      "canonicalGitLfSha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357",
+      "rawBytes": 337,
+      "canonicalBytes": 323,
+      "crlfCount": 14,
+      "onlyCrlfToLfEqualsGit": true,
+      "gitBlob": "20280f0ca354a691861ab6f17821bbeb04632003"
+    },
+    {
+      "path": "tests/cloudpickle_test.py",
+      "windowsRawSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9",
+      "canonicalGitLfSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9",
+      "rawBytes": 125234,
+      "canonicalBytes": 125234,
+      "crlfCount": 0,
+      "onlyCrlfToLfEqualsGit": true,
+      "gitBlob": "35daf2c8d87f1c0000672f80f672fad148e74e6c"
+    },
+    {
+      "path": "CHANGES.md",
+      "windowsRawSha256": "7f66dd8c352f478be58bbdba59a4d7c3ca70e22451e1c25eb45dc338c2689542",
+      "canonicalGitLfSha256": "54a30bf2e6e7cec7793a17684e1df8d8778f00e7b2c1b2c4aa89e662169d6eeb",
+      "rawBytes": 15894,
+      "canonicalBytes": 15429,
+      "crlfCount": 465,
+      "onlyCrlfToLfEqualsGit": true,
+      "gitBlob": "13bb5abe5b3cffade5dece5792cb0dd1070d14f3"
+    }
+  ],
+  "matrix": [
+    {
+      "interpreter": "win310",
+      "fullSuite": {
+        "file": "v4-win310-candidate-core.xml",
+        "sha256": "c6fbdadb680178fc3e123e7e350ddaa8c66a802a57c1e836f029cf5b8393a06a",
+        "total": 323,
+        "pass": 317,
+        "fail": 0,
+        "error": 0,
+        "skip": 4,
+        "xfail": 2
+      },
+      "fullSuiteTestsLfSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1",
+      "finalRegression": {
+        "file": "v5-final-win310-candidate-target.xml",
+        "sha256": "579ff0eafb40d7352bfbb1b16d1e68e17ae77a983d52903aac1b247ef5616d14",
+        "total": 48,
+        "pass": 48,
+        "fail": 0,
+        "error": 0,
+        "skip": 0,
+        "xfail": 0
+      },
+      "baselineFinalRegression": {
+        "file": "v5-final-win310-base-target.xml",
+        "sha256": "636e444d3f6d1dbb6079eb683da2963468063d9afd48c20690139f840dc03f66",
+        "total": 48,
+        "pass": 32,
+        "fail": 16,
+        "error": 0,
+        "skip": 0,
+        "xfail": 0
+      },
+      "finalRegressionTestsLfSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9"
+    },
+    {
+      "interpreter": "win311",
+      "fullSuite": {
+        "file": "v4-win311-candidate-core.xml",
+        "sha256": "5ebf2f03d499d7f162f1dbf756804df9e2eecffd401d57e7c9298a8cc8808bab",
+        "total": 326,
+        "pass": 321,
+        "fail": 0,
+        "error": 0,
+        "skip": 3,
+        "xfail": 2
+      },
+      "fullSuiteTestsLfSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1",
+      "finalRegression": {
+        "file": "v5-final-win311-candidate-target.xml",
+        "sha256": "dc3b577588e20dc495e44e6878eb6dbf18957ee1f4e0e64884a4defbadb26331",
+        "total": 48,
+        "pass": 48,
+        "fail": 0,
+        "error": 0,
+        "skip": 0,
+        "xfail": 0
+      },
+      "baselineFinalRegression": {
+        "file": "v5-final-win311-base-target.xml",
+        "sha256": "e21d7174275db6c631d9d4a6f1caa4e655681ee8980e801dc172f3a9d69ee2f2",
+        "total": 48,
+        "pass": 32,
+        "fail": 16,
+        "error": 0,
+        "skip": 0,
+        "xfail": 0
+      },
+      "finalRegressionTestsLfSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9"
+    },
+    {
+      "interpreter": "win312",
+      "fullSuite": {
+        "file": "v4-win312-candidate-core.xml",
+        "sha256": "45540e0146bb41d15f96d87a655de88ec21d740892284dae21c4b70d97c0d820",
+        "total": 326,
+        "pass": 314,
+        "fail": 0,
+        "error": 0,
+        "skip": 10,
+        "xfail": 2
+      },
+      "fullSuiteTestsLfSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1",
+      "finalRegression": {
+        "file": "v5-final-win312-candidate-target.xml",
+        "sha256": "b89cfbaa6fbf3c9051de6ded05a74510e22bac2ac1d24723c2436f2ad94214ee",
+        "total": 48,
+        "pass": 48,
+        "fail": 0,
+        "error": 0,
+        "skip": 0,
+        "xfail": 0
+      },
+      "baselineFinalRegression": {
+        "file": "v5-final-win312-base-target.xml",
+        "sha256": "bdfacabd590a9e26b6793520f8df39d20cacfe98a5f28ebda230cd8e24be9d9d",
+        "total": 48,
+        "pass": 32,
+        "fail": 16,
+        "error": 0,
+        "skip": 0,
+        "xfail": 0
+      },
+      "finalRegressionTestsLfSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9"
+    },
+    {
+      "interpreter": "win313",
+      "fullSuite": {
+        "file": "v4-win313-candidate-core.xml",
+        "sha256": "db44a6e2234c56378329aa3dbb4912c59ced966240cbe6bf30158edfe17ca6bc",
+        "total": 326,
+        "pass": 313,
+        "fail": 0,
+        "error": 0,
+        "skip": 11,
+        "xfail": 2
+      },
+      "fullSuiteTestsLfSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1",
+      "finalRegression": {
+        "file": "v5-final-win313-candidate-target.xml",
+        "sha256": "207d33bc4c87ce22e99f367cfb24bafa7b61f1d46ae48f5883f71d6fdeb3fa3a",
+        "total": 48,
+        "pass": 48,
+        "fail": 0,
+        "error": 0,
+        "skip": 0,
+        "xfail": 0
+      },
+      "baselineFinalRegression": {
+        "file": "v5-final-win313-base-target.xml",
+        "sha256": "e08ff35494322d2f02026019f71437ba68ee3bf4c4f94fbba74ed5c084cb23fc",
+        "total": 48,
+        "pass": 32,
+        "fail": 16,
+        "error": 0,
+        "skip": 0,
+        "xfail": 0
+      },
+      "finalRegressionTestsLfSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9"
+    },
+    {
+      "interpreter": "win314",
+      "fullSuite": {
+        "file": "v4-win314-candidate-core.xml",
+        "sha256": "735831e1bd21b4efe6a5c476b510180fc1b4ce786d1a41cfb1de9ccbd312ba39",
+        "total": 326,
+        "pass": 311,
+        "fail": 0,
+        "error": 0,
+        "skip": 13,
+        "xfail": 2
+      },
+      "fullSuiteTestsLfSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1",
+      "finalRegression": {
+        "file": "v5-final-win314-candidate-target.xml",
+        "sha256": "9f5c48bf19ce0cac35f8d745c84b1d7d3d94509d35369fb403d725ddac05a951",
+        "total": 48,
+        "pass": 48,
+        "fail": 0,
+        "error": 0,
+        "skip": 0,
+        "xfail": 0
+      },
+      "baselineFinalRegression": {
+        "file": "v5-final-win314-base-target.xml",
+        "sha256": "4100dfada7b6c2d21957fc89f99f61f8d08600f7b9ec99f38a77cf08fea84b15",
+        "total": 48,
+        "pass": 32,
+        "fail": 16,
+        "error": 0,
+        "skip": 0,
+        "xfail": 0
+      },
+      "finalRegressionTestsLfSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9"
+    },
+    {
+      "interpreter": "linux-py38",
+      "fullSuite": {
+        "file": "v4-linux-py38-candidate-core.xml",
+        "sha256": "63bd28da1e68b64468a473e39a089eef90d5b59e8da26bee2cac2f4b2c6a9071",
+        "total": 326,
+        "pass": 319,
+        "fail": 0,
+        "error": 0,
+        "skip": 5,
+        "xfail": 2
+      },
+      "fullSuiteTestsLfSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9",
+      "finalRegression": {
+        "file": "v4-linux-py38-candidate-core.xml",
+        "sha256": "63bd28da1e68b64468a473e39a089eef90d5b59e8da26bee2cac2f4b2c6a9071",
+        "total": 48,
+        "pass": 46,
+        "fail": 0,
+        "error": 0,
+        "skip": 2,
+        "xfail": 0
+      },
+      "baselineFinalRegression": {
+        "file": "v4-linux-py38-base-target.xml",
+        "sha256": "bb625e26032a61cb1242fca87d21b1d9c256164fc7a73ed1afd8abe1775986ce",
+        "total": 48,
+        "pass": 32,
+        "fail": 14,
+        "error": 0,
+        "skip": 2,
+        "xfail": 0
+      },
+      "finalRegressionTestsLfSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9",
+      "finalCanonicalSourceVerification": "v4-linux-py38-source-{before,after}.json: all65 SHA256 equal staged Git manifest"
+    },
+    {
+      "interpreter": "linux-py39",
+      "fullSuite": {
+        "file": "v4-linux-py39-candidate-core.xml",
+        "sha256": "596d43d10f46128d601fced5ea103e7872327a083d25b884abc831a568cbbfbf",
+        "total": 326,
+        "pass": 321,
+        "fail": 0,
+        "error": 0,
+        "skip": 3,
+        "xfail": 2
+      },
+      "fullSuiteTestsLfSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1",
+      "finalRegression": {
+        "file": "v5-final-linux-py39-candidate-target.xml",
+        "sha256": "f43b5067d1ee6d3c9a5838a176d1f55cd981ed8679cdc9493fb1c84397a66e65",
+        "total": 48,
+        "pass": 46,
+        "fail": 0,
+        "error": 0,
+        "skip": 2,
+        "xfail": 0
+      },
+      "baselineFinalRegression": {
+        "file": "v5-final-linux-py39-base-target.xml",
+        "sha256": "ae01bd9464c174f4764bcbd2e5eae5674d37ed3f69c841d66c767587aad96303",
+        "total": 48,
+        "pass": 32,
+        "fail": 14,
+        "error": 0,
+        "skip": 2,
+        "xfail": 0
+      },
+      "finalRegressionTestsLfSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9",
+      "finalCanonicalSourceVerification": "v5-final-linux-py39-source-{before,after}.json: all65 SHA256 equal staged Git manifest"
+    },
+    {
+      "interpreter": "linux-pypy39",
+      "fullSuite": {
+        "file": "v4-linux-pypy39-candidate-core.xml",
+        "sha256": "7111b1e1c51996ec9f39e8b7d0d59d8e1f43a15e794d1d560e31f3bb2ddea4bc",
+        "total": 326,
+        "pass": 303,
+        "fail": 0,
+        "error": 0,
+        "skip": 21,
+        "xfail": 2
+      },
+      "fullSuiteTestsLfSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1",
+      "finalRegression": {
+        "file": "v5-final-linux-pypy39-candidate-target.xml",
+        "sha256": "def1186cdb3982684a669fc44329bf3c7b6eb6fe93e3cff22710bf4d6cea389c",
+        "total": 48,
+        "pass": 46,
+        "fail": 0,
+        "error": 0,
+        "skip": 2,
+        "xfail": 0
+      },
+      "baselineFinalRegression": {
+        "file": "v5-final-linux-pypy39-base-target.xml",
+        "sha256": "a5c0ea552383360393a73250b96e8d7758a15270792f9595f9a2a8065231d5ef",
+        "total": 48,
+        "pass": 32,
+        "fail": 14,
+        "error": 0,
+        "skip": 2,
+        "xfail": 0
+      },
+      "finalRegressionTestsLfSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9",
+      "finalCanonicalSourceVerification": "v5-final-linux-pypy39-source-{before,after}.json: all65 SHA256 equal staged Git manifest"
+    }
+  ],
+  "lastTestOnlyDelta": "Two return-value assertions changed from identity with False to falsiness, matching Python3.8 asynccontextmanager normal-exit contract. All final48 cases rerun on every8 interpreter; LinuxCPython3.8 full suite also ran final tree. Other7 complete-suite results retain earlier test hash and are not represented as final-tree full reruns. Production unchanged.",
+  "strictFreshProcessConsumers": [
+    {
+      "file": "v4-runtime-win310/result.json",
+      "python": "3.10.20 (main, Jul 23 2026, 14:42:02) [MSC v.1944 64 bit (AMD64)]",
+      "passes": 4,
+      "stdlibCapabilitySkips": 0
+    },
+    {
+      "file": "v4-runtime-win311/result.json",
+      "python": "3.11.15 (main, Mar 10 2026, 18:12:25) [MSC v.1944 64 bit (AMD64)]",
+      "passes": 4,
+      "stdlibCapabilitySkips": 0
+    },
+    {
+      "file": "v4-runtime-win312/result.json",
+      "python": "3.12.13 (main, Mar 10 2026, 18:15:39) [MSC v.1944 64 bit (AMD64)]",
+      "passes": 4,
+      "stdlibCapabilitySkips": 0
+    },
+    {
+      "file": "v4-runtime-win313/result.json",
+      "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+      "passes": 4,
+      "stdlibCapabilitySkips": 0
+    },
+    {
+      "file": "v4-runtime-win314/result.json",
+      "python": "3.14.3 (main, Mar 10 2026, 18:14:48) [MSC v.1944 64 bit (AMD64)]",
+      "passes": 4,
+      "stdlibCapabilitySkips": 0
+    },
+    {
+      "file": "v4-linux-py38-runtime/result.json",
+      "python": "3.8.20 (default, Sep 27 2024, 06:05:23) \n[GCC 12.2.0]",
+      "passes": 2,
+      "stdlibCapabilitySkips": 1
+    },
+    {
+      "file": "v5-final-linux-py39-runtime/result.json",
+      "python": "3.9.25 (main, Oct 31 2025, 23:16:49) \n[GCC 14.2.0]",
+      "passes": 2,
+      "stdlibCapabilitySkips": 1
+    },
+    {
+      "file": "v5-final-linux-pypy39-runtime/result.json",
+      "python": "3.9.19 (a2113ea87262, Apr 21 2024, 05:40:24)\n[PyPy 7.3.16 with GCC 10.2.1 20210130 (Red Hat 10.2.1-11)]",
+      "passes": 2,
+      "stdlibCapabilitySkips": 1
+    },
+    {
+      "file": "v4-runtime-wheel-py311/result.json",
+      "python": "3.11.15 (main, Mar 10 2026, 18:12:25) [MSC v.1944 64 bit (AMD64)]",
+      "passes": 4,
+      "stdlibCapabilitySkips": 0
+    }
+  ],
+  "packaging": {
+    "steps": [
+      {
+        "step": "export",
+        "exit": 0
+      },
+      {
+        "step": "build",
+        "exit": 0
+      },
+      {
+        "step": "install",
+        "exit": 0
+      },
+      {
+        "step": "consumer",
+        "exit": 0
+      }
+    ],
+    "wheelSha256": "04abe1086038c7e6e7a65fb8d1ba868b5d26f5c6ce4cc22bdcca6e39474a79f1",
+    "sdistSha256": "8c789321a691a940d9dab6e010551bc730448de0caa39487bfc9712dfd73f35d",
+    "packagedSources": [
+      {
+        "path": "cloudpickle/__init__.py",
+        "sha256": "c10a36b9ae1e6bec079c655283006e39f05d35bd95a24e1fffe98d6b9070e2a7",
+        "matchesGitAndInstalled": true
+      },
+      {
+        "path": "cloudpickle/cloudpickle.py",
+        "sha256": "110be30f5da5d8c96fab6b1780d7eec890e4613e8e84b1c5a3b63fc4e65e2f77",
+        "matchesGitAndInstalled": true
+      },
+      {
+        "path": "cloudpickle/cloudpickle_fast.py",
+        "sha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357",
+        "matchesGitAndInstalled": true
+      }
+    ]
+  },
+  "hooks": {
+    "finalResults": [
+      {
+        "check": "ci-rootglob",
+        "exit": 0
+      },
+      {
+        "check": "changed",
+        "exit": 0
+      }
+    ],
+    "exactConfiguredCommand": "pre-commit run --files *",
+    "changedFiles": [
+      "CHANGES.md",
+      "cloudpickle/cloudpickle.py",
+      "tests/cloudpickle_test.py"
+    ],
+    "broaderAllFiles": "Optional broader --all-files finds same preexisting Black formatting failure in unmodified tests/cloudpickle_ipykernel_test.py on base/candidate; original blob restored and excluded."
+  },
+  "coverage": "ci/install_coverage_subprocess_pth.py, COVERAGE_PROCESS_START, PYTHONPATH, complete pytest, coverage combine --append and coverage xml -i actually executed for Linux3.8/3.9/PyPy3.9 and Windows3.11. OtherWindows full suites execute pytest project entry. No codecov upload.",
+  "independentReview": "../discovery-20261027-cloudpickle-review/verification.json:40 assertion cases PASS at Windows raw5b08349f; no confirmed design blocker. Root activity assessment permits stable foundation dependency with latest real human merge Sep10 (about6weeks), not claimed active in past30days.",
+  "policyAndDuplicateEvidence": [
+    "cloudpickle-platform.json:pull_request_creation_policy=all",
+    "cloudpickle509-fresh.json",
+    "cloudpickle509-comments-fresh.json",
+    "cloudpickle509-timeline-fresh.json",
+    "cloudpickle-open-prs-fresh.json:complete30OPEN",
+    "cloudpickle-pr606-actual-files.json",
+    "cloudpickle-pr616-actual-files.json",
+    "cloudpickle-pr617-actual-files.json",
+    "cloudpipe-org-defaults.json:publicdefault404"
+  ],
+  "notLocallyExecuted": [
+    "macOS hosted matrix and remaining OS/version combinations",
+    "label-conditional downstream suites",
+    "codecov upload/release"
+  ],
+  "status": "LOCAL_GATES_COMPLETE; NORMAL_COMMIT_CREATED; PUBLICATION_PENDING",
+  "sourceCommit": "be9d2972848e069d53c95936cd600745bd5cfaec"
+}

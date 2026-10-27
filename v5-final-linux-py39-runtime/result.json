@@ -1,0 +1,80 @@
+{
+  "python": "3.9.25 (main, Oct 31 2025, 23:16:49) \n[GCC 14.2.0]",
+  "source": "/tmp/candidate",
+  "producerPid": 86,
+  "cases": [
+    {
+      "case": "sync-p2",
+      "status": "PASS",
+      "payloadSha256": "a85663f5b4dcf4cf5f5cc172c6eb60db56b0908c3bb60f4666593c32cf401598",
+      "consumer": {
+        "pid": 87,
+        "one": [
+          "enter",
+          "one"
+        ],
+        "two": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two"
+        ],
+        "events": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two",
+          "exit"
+        ],
+        "assertions": "PASS"
+      }
+    },
+    {
+      "case": "sync-p5",
+      "status": "PASS",
+      "payloadSha256": "ded5291c8b8a2520fa61f1c05cc4482bb7afe7225437cd9fd5f72b88dde22941",
+      "consumer": {
+        "pid": 88,
+        "one": [
+          "enter",
+          "one"
+        ],
+        "two": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two"
+        ],
+        "events": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two",
+          "exit"
+        ],
+        "assertions": "PASS"
+      }
+    },
+    {
+      "case": "async",
+      "status": "STDLIB_CAPABILITY_SKIP",
+      "reason": "asynccontextmanager decorators require Python3.10"
+    }
+  ]
+}

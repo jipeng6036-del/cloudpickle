@@ -1,0 +1,52 @@
+[
+  {
+    "path": "cloudpickle/__init__.py",
+    "windowsRawSha256": "c8dcb60fbbc27f1d46f2da823b7b25342a5ac60ff3e9e288402ff08f603fd5ed",
+    "canonicalGitLfSha256": "c10a36b9ae1e6bec079c655283006e39f05d35bd95a24e1fffe98d6b9070e2a7",
+    "rawBytes": 331,
+    "canonicalBytes": 313,
+    "crlfCount": 18,
+    "onlyCrlfToLfEqualsGit": true,
+    "gitBlob": "bc99dacd1540c235845467b7ff45c0d9ed9a4d3c"
+  },
+  {
+    "path": "cloudpickle/cloudpickle.py",
+    "windowsRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+    "canonicalGitLfSha256": "110be30f5da5d8c96fab6b1780d7eec890e4613e8e84b1c5a3b63fc4e65e2f77",
+    "rawBytes": 62691,
+    "canonicalBytes": 61080,
+    "crlfCount": 1611,
+    "onlyCrlfToLfEqualsGit": true,
+    "gitBlob": "814a1346b6a6932290319159fb7db6015825e979"
+  },
+  {
+    "path": "cloudpickle/cloudpickle_fast.py",
+    "windowsRawSha256": "9996026ddec0f65823d24301d2c5e2cadcca1434eabe07fbb1e6eecf631c6f1e",
+    "canonicalGitLfSha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357",
+    "rawBytes": 337,
+    "canonicalBytes": 323,
+    "crlfCount": 14,
+    "onlyCrlfToLfEqualsGit": true,
+    "gitBlob": "20280f0ca354a691861ab6f17821bbeb04632003"
+  },
+  {
+    "path": "tests/cloudpickle_test.py",
+    "windowsRawSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9",
+    "canonicalGitLfSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9",
+    "rawBytes": 125234,
+    "canonicalBytes": 125234,
+    "crlfCount": 0,
+    "onlyCrlfToLfEqualsGit": true,
+    "gitBlob": "35daf2c8d87f1c0000672f80f672fad148e74e6c"
+  },
+  {
+    "path": "CHANGES.md",
+    "windowsRawSha256": "7f66dd8c352f478be58bbdba59a4d7c3ca70e22451e1c25eb45dc338c2689542",
+    "canonicalGitLfSha256": "54a30bf2e6e7cec7793a17684e1df8d8778f00e7b2c1b2c4aa89e662169d6eeb",
+    "rawBytes": 15894,
+    "canonicalBytes": 15429,
+    "crlfCount": 465,
+    "onlyCrlfToLfEqualsGit": true,
+    "gitBlob": "13bb5abe5b3cffade5dece5792cb0dd1070d14f3"
+  }
+]

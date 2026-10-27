@@ -1,0 +1,143 @@
+{
+  "python": "3.12.13 (main, Mar 10 2026, 18:15:39) [MSC v.1944 64 bit (AMD64)]",
+  "source": "F:\\Github-PR\\inspection\\oct27-ai-cloudpickle509",
+  "producerPid": 63420,
+  "cases": [
+    {
+      "case": "sync-p2",
+      "status": "PASS",
+      "payloadSha256": "beaa60a156763f239a1bb24f7773cf8fc14a5ae77f0a3219d127b62bbd5dd763",
+      "consumer": {
+        "pid": 24944,
+        "one": [
+          "enter",
+          "one"
+        ],
+        "two": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two"
+        ],
+        "events": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two",
+          "exit"
+        ],
+        "assertions": "PASS"
+      }
+    },
+    {
+      "case": "sync-p5",
+      "status": "PASS",
+      "payloadSha256": "95c328b0388135bb003ca28c3696f10372561d3c3114a09454ce68f2fcd299fb",
+      "consumer": {
+        "pid": 62908,
+        "one": [
+          "enter",
+          "one"
+        ],
+        "two": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two"
+        ],
+        "events": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two",
+          "exit"
+        ],
+        "assertions": "PASS"
+      }
+    },
+    {
+      "case": "async-p2",
+      "status": "PASS",
+      "payloadSha256": "d239f37d2ef6fb56198b421e7923d7113e84f3e73412e47034d43c76e101fd7b",
+      "consumer": {
+        "pid": 54556,
+        "one": [
+          "enter",
+          "one"
+        ],
+        "two": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two"
+        ],
+        "events": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two",
+          "exit"
+        ],
+        "assertions": "PASS"
+      }
+    },
+    {
+      "case": "async-p5",
+      "status": "PASS",
+      "payloadSha256": "9aedb7efdd070af03d502171f0f9f00f123f5b9cbc31d62a23b072236fb96320",
+      "consumer": {
+        "pid": 89256,
+        "one": [
+          "enter",
+          "one"
+        ],
+        "two": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two"
+        ],
+        "events": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two",
+          "exit"
+        ],
+        "assertions": "PASS"
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "python": "3.9.19 (a2113ea87262, Apr 21 2024, 05:40:24)\n[PyPy 7.3.16 with GCC 10.2.1 20210130 (Red Hat 10.2.1-11)]",
+  "source": "/tmp/candidate",
+  "producerPid": 92,
+  "cases": [
+    {
+      "case": "sync-p2",
+      "status": "PASS",
+      "payloadSha256": "d7e75b0458dedfbf1f10fd37400be5721df8c3a4654c6f20c4246227d50a4c15",
+      "consumer": {
+        "pid": 94,
+        "one": [
+          "enter",
+          "one"
+        ],
+        "two": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two"
+        ],
+        "events": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two",
+          "exit"
+        ],
+        "assertions": "PASS"
+      }
+    },
+    {
+      "case": "sync-p5",
+      "status": "PASS",
+      "payloadSha256": "b4ca5cc3fa280ae6b4bceb068dc8a607eb8e935090957d0cc7bdc04356f24297",
+      "consumer": {
+        "pid": 96,
+        "one": [
+          "enter",
+          "one"
+        ],
+        "two": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two"
+        ],
+        "events": [
+          "enter",
+          "one",
+          "exit",
+          "enter",
+          "fail",
+          "exit",
+          "enter",
+          "two",
+          "exit"
+        ],
+        "assertions": "PASS"
+      }
+    },
+    {
+      "case": "async",
+      "status": "STDLIB_CAPABILITY_SKIP",
+      "reason": "asynccontextmanager decorators require Python3.10"
+    }
+  ]
+}

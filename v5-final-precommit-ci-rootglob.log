@@ -1,0 +1,5 @@
+check yaml...............................................................Passed
+fix end of files.........................................................Passed
+trim trailing whitespace.................................................Passed
+black................................................(no files to check)Skipped
+ruff (legacy alias)..................................(no files to check)Skipped

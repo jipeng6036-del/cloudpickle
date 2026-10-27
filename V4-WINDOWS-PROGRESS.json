@@ -1,0 +1,135 @@
+[
+  {
+    "version": "310",
+    "steps": [
+      {
+        "name": "base-target",
+        "exit": 1,
+        "sourceRawSha256": "e2841e74e0e368f468fc977890a6d957992be5c2d2ee51eb3259f3fa80450135",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "candidate-core",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "runtime",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      }
+    ]
+  },
+  {
+    "version": "311",
+    "steps": [
+      {
+        "name": "coverage-install",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "base-target",
+        "exit": 1,
+        "sourceRawSha256": "e2841e74e0e368f468fc977890a6d957992be5c2d2ee51eb3259f3fa80450135",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "candidate-core",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "runtime",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "coverage-combine",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "coverage-xml",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      }
+    ]
+  },
+  {
+    "version": "312",
+    "steps": [
+      {
+        "name": "base-target",
+        "exit": 1,
+        "sourceRawSha256": "e2841e74e0e368f468fc977890a6d957992be5c2d2ee51eb3259f3fa80450135",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "candidate-core",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "runtime",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      }
+    ]
+  },
+  {
+    "version": "313",
+    "steps": [
+      {
+        "name": "base-target",
+        "exit": 1,
+        "sourceRawSha256": "e2841e74e0e368f468fc977890a6d957992be5c2d2ee51eb3259f3fa80450135",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "candidate-core",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "runtime",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      }
+    ]
+  },
+  {
+    "version": "314",
+    "steps": [
+      {
+        "name": "base-target",
+        "exit": 1,
+        "sourceRawSha256": "e2841e74e0e368f468fc977890a6d957992be5c2d2ee51eb3259f3fa80450135",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "candidate-core",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      },
+      {
+        "name": "runtime",
+        "exit": 0,
+        "sourceRawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+        "testsRawSha256": "d93f15160cf166c6dc56027771f5e9bedeb848a03f036524ba356259bc4b6bf1"
+      }
+    ]
+  }
+]

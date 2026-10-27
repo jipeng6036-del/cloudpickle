@@ -1,0 +1,936 @@
+FFFF....FFFFFFFFFFFF............................
+================================== FAILURES ===================================
+____________ test_contextmanager_decorator_in_subprocess[False-2] _____________
+
+protocol = 2, asynchronous = False
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    def test_contextmanager_decorator_in_subprocess(protocol, asynchronous):
+        if asynchronous and sys.version_info < (3, 10):
+            pytest.skip("asynccontextmanager supports decorators since Python 3.10")
+        events = []
+    
+        if asynchronous:
+    
+            @contextlib.asynccontextmanager
+            async def manager(prefix, *, suffix):
+                events.append(prefix)
+                try:
+                    yield
+                finally:
+                    events.append(suffix)
+    
+        else:
+    
+            @contextlib.contextmanager
+            def manager(prefix, *, suffix):
+                events.append(prefix)
+                try:
+                    yield
+                finally:
+                    events.append(suffix)
+    
+        decorator = manager("enter", suffix="exit")
+        decorator.note = "preserved"
+>       decorator_copy = pickle_depickle(decorator, protocol=protocol)
+
+tests\cloudpickle_test.py:3113: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D403AC0>
+obj = <contextlib._GeneratorContextManager object at 0x000002257CDFDEA0>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+____________ test_contextmanager_decorator_in_subprocess[False-5] _____________
+
+protocol = 5, asynchronous = False
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    def test_contextmanager_decorator_in_subprocess(protocol, asynchronous):
+        if asynchronous and sys.version_info < (3, 10):
+            pytest.skip("asynccontextmanager supports decorators since Python 3.10")
+        events = []
+    
+        if asynchronous:
+    
+            @contextlib.asynccontextmanager
+            async def manager(prefix, *, suffix):
+                events.append(prefix)
+                try:
+                    yield
+                finally:
+                    events.append(suffix)
+    
+        else:
+    
+            @contextlib.contextmanager
+            def manager(prefix, *, suffix):
+                events.append(prefix)
+                try:
+                    yield
+                finally:
+                    events.append(suffix)
+    
+        decorator = manager("enter", suffix="exit")
+        decorator.note = "preserved"
+>       decorator_copy = pickle_depickle(decorator, protocol=protocol)
+
+tests\cloudpickle_test.py:3113: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D402680>
+obj = <contextlib._GeneratorContextManager object at 0x000002257D63F8B0>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+_____________ test_contextmanager_decorator_in_subprocess[True-2] _____________
+
+protocol = 2, asynchronous = True
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    def test_contextmanager_decorator_in_subprocess(protocol, asynchronous):
+        if asynchronous and sys.version_info < (3, 10):
+            pytest.skip("asynccontextmanager supports decorators since Python 3.10")
+        events = []
+    
+        if asynchronous:
+    
+            @contextlib.asynccontextmanager
+            async def manager(prefix, *, suffix):
+                events.append(prefix)
+                try:
+                    yield
+                finally:
+                    events.append(suffix)
+    
+        else:
+    
+            @contextlib.contextmanager
+            def manager(prefix, *, suffix):
+                events.append(prefix)
+                try:
+                    yield
+                finally:
+                    events.append(suffix)
+    
+        decorator = manager("enter", suffix="exit")
+        decorator.note = "preserved"
+>       decorator_copy = pickle_depickle(decorator, protocol=protocol)
+
+tests\cloudpickle_test.py:3113: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D402140>
+obj = <contextlib._AsyncGeneratorContextManager object at 0x000002257B3CC4C0>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'async_generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+_____________ test_contextmanager_decorator_in_subprocess[True-5] _____________
+
+protocol = 5, asynchronous = True
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    def test_contextmanager_decorator_in_subprocess(protocol, asynchronous):
+        if asynchronous and sys.version_info < (3, 10):
+            pytest.skip("asynccontextmanager supports decorators since Python 3.10")
+        events = []
+    
+        if asynchronous:
+    
+            @contextlib.asynccontextmanager
+            async def manager(prefix, *, suffix):
+                events.append(prefix)
+                try:
+                    yield
+                finally:
+                    events.append(suffix)
+    
+        else:
+    
+            @contextlib.contextmanager
+            def manager(prefix, *, suffix):
+                events.append(prefix)
+                try:
+                    yield
+                finally:
+                    events.append(suffix)
+    
+        decorator = manager("enter", suffix="exit")
+        decorator.note = "preserved"
+>       decorator_copy = pickle_depickle(decorator, protocol=protocol)
+
+tests\cloudpickle_test.py:3113: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D402680>
+obj = <contextlib._AsyncGeneratorContextManager object at 0x000002257CDE31F0>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'async_generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+_____________ test_contextmanager_cyclic_state[function-False-2] ______________
+
+protocol = 2, asynchronous = False, factory_kind = 'function'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D2E68C0>
+obj = <contextlib._GeneratorContextManager object at 0x000002257CF17010>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+_____________ test_contextmanager_cyclic_state[function-False-5] ______________
+
+protocol = 5, asynchronous = False, factory_kind = 'function'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D2E6B00>
+obj = <contextlib._GeneratorContextManager object at 0x000002257B3CDC30>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+______________ test_contextmanager_cyclic_state[function-True-2] ______________
+
+protocol = 2, asynchronous = True, factory_kind = 'function'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D402080>
+obj = <contextlib._AsyncGeneratorContextManager object at 0x000002257B371330>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'async_generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+______________ test_contextmanager_cyclic_state[function-True-5] ______________
+
+protocol = 5, asynchronous = True, factory_kind = 'function'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D402D40>
+obj = <contextlib._AsyncGeneratorContextManager object at 0x000002257D63F8B0>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'async_generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+______________ test_contextmanager_cyclic_state[method-False-2] _______________
+
+protocol = 2, asynchronous = False, factory_kind = 'method'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D2E6980>
+obj = <contextlib._GeneratorContextManager object at 0x000002257B3CF190>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+______________ test_contextmanager_cyclic_state[method-False-5] _______________
+
+protocol = 5, asynchronous = False, factory_kind = 'method'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D402140>
+obj = <contextlib._GeneratorContextManager object at 0x000002257B370310>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+_______________ test_contextmanager_cyclic_state[method-True-2] _______________
+
+protocol = 2, asynchronous = True, factory_kind = 'method'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D402080>
+obj = <contextlib._AsyncGeneratorContextManager object at 0x000002257B3CE6B0>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'async_generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+_______________ test_contextmanager_cyclic_state[method-True-5] _______________
+
+protocol = 5, asynchronous = True, factory_kind = 'method'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D2E6BC0>
+obj = <contextlib._AsyncGeneratorContextManager object at 0x000002257D251780>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'async_generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+______________ test_contextmanager_cyclic_state[partial-False-2] ______________
+
+protocol = 2, asynchronous = False, factory_kind = 'partial'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D402D40>
+obj = <contextlib._GeneratorContextManager object at 0x000002257CF164A0>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+______________ test_contextmanager_cyclic_state[partial-False-5] ______________
+
+protocol = 5, asynchronous = False, factory_kind = 'partial'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D2E68C0>
+obj = <contextlib._GeneratorContextManager object at 0x000002257D2536D0>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+______________ test_contextmanager_cyclic_state[partial-True-2] _______________
+
+protocol = 2, asynchronous = True, factory_kind = 'partial'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D2E6C80>
+obj = <contextlib._AsyncGeneratorContextManager object at 0x000002257D158E20>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'async_generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+______________ test_contextmanager_cyclic_state[partial-True-5] _______________
+
+protocol = 5, asynchronous = True, factory_kind = 'partial'
+
+    @pytest.mark.parametrize("protocol", [2, cloudpickle.DEFAULT_PROTOCOL])
+    @pytest.mark.parametrize("asynchronous", [False, True])
+    @pytest.mark.parametrize("factory_kind", ["function", "method", "partial"])
+    def test_contextmanager_cyclic_state(protocol, asynchronous, factory_kind):
+        contexts = {}
+        if asynchronous:
+    
+            async def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.asynccontextmanager
+        else:
+    
+            def manager(owner, positional, *, keyword):
+                assert owner == ["owner"]
+                assert positional[0] is keyword["instance"] is contexts["instance"]
+                yield contexts["instance"]
+    
+            decorate = contextlib.contextmanager
+    
+        positional = []
+        owner = ["owner"]
+        if factory_kind == "method":
+            manager = types.MethodType(manager, owner)
+        elif factory_kind == "partial":
+            manager = functools.partial(functools.partial(manager), owner)
+        else:
+            positional_args = (owner, positional)
+        if factory_kind != "function":
+            positional_args = (positional,)
+        instance = decorate(manager)(*positional_args, keyword=contexts)
+        positional.append(instance)
+        contexts["instance"] = instance
+        instance.members = weakref.WeakSet([instance])
+>       clone = pickle_depickle(instance, protocol=protocol)
+
+tests\cloudpickle_test.py:3246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\cloudpickle_test.py:77: in pickle_depickle
+    return pickle.loads(cloudpickle.dumps(obj, protocol=protocol))
+cloudpickle\cloudpickle.py:1558: in dumps
+    cp.dump(obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudpickle.cloudpickle.Pickler object at 0x000002257D402140>
+obj = <contextlib._AsyncGeneratorContextManager object at 0x000002257D60D1B0>
+
+    def dump(self, obj):
+        try:
+>           return super().dump(obj)
+E           TypeError: cannot pickle 'async_generator' object
+
+cloudpickle\cloudpickle.py:1327: TypeError
+=========================== short test summary info ===========================
+FAILED tests/cloudpickle_test.py::test_contextmanager_decorator_in_subprocess[False-2]
+FAILED tests/cloudpickle_test.py::test_contextmanager_decorator_in_subprocess[False-5]
+FAILED tests/cloudpickle_test.py::test_contextmanager_decorator_in_subprocess[True-2]
+FAILED tests/cloudpickle_test.py::test_contextmanager_decorator_in_subprocess[True-5]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[function-False-2]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[function-False-5]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[function-True-2]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[function-True-5]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[method-False-2]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[method-False-5]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[method-True-2]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[method-True-5]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[partial-False-2]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[partial-False-5]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[partial-True-2]
+FAILED tests/cloudpickle_test.py::test_contextmanager_cyclic_state[partial-True-5]
+16 failed, 32 passed, 260 deselected in 1.49s

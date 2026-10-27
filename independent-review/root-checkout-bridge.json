@@ -1,0 +1,659 @@
+{
+  "checkedAtUtc": "2026-10-27T10:56:57.967360+00:00",
+  "count": 65,
+  "rawEqualsGitCount": 30,
+  "onlyCRLFCheckoutDifferenceCount": 35,
+  "otherDifferenceCount": 0,
+  "files": [
+    {
+      "path": ".coveragerc",
+      "mode": "100644",
+      "gitBlob": "81c8abff840b8104458759a6b1735983fb1d1731",
+      "rawSha256": "42e24a2471b8fb6ac834cb1ee01b54d2695c1fbf8d1df7ab024319141c9338f9",
+      "canonicalSha256": "ce60d14b9a1b54b024ba9261c58ca239b032f3d1421c064566681156e8306425",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": ".git-blame-ignore-revs",
+      "mode": "100644",
+      "gitBlob": "ca9dcc4f80a777ff67a1c89e33884a785bc7371e",
+      "rawSha256": "a07075409dfd12cbf2c7efc749335f1abdd256c845b98b670f8bd44a55917385",
+      "canonicalSha256": "01ad4e2ec25f36d9f6998b37cf3fcee961fa1f59c975bd68c29cfb573e73c2ca",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": ".github/scripts/install_downstream_project.sh",
+      "mode": "100644",
+      "gitBlob": "cd9f0fba6ff73bb344188342103970c4b25c4394",
+      "rawSha256": "e44f2788a39489298257d99560496a632630e42a38e857a218ed7c465c17816d",
+      "canonicalSha256": "ccef29fa0f17380da6ab0c500425ad6c582c52202f9307c35349eb1073983bfb",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": ".github/scripts/test_downstream_project.sh",
+      "mode": "100644",
+      "gitBlob": "31aae20ea570abd6e5df7877ad4e0b740eb4ee59",
+      "rawSha256": "829120bcdf29eaaad8724b174f73a22d1cc99c86653b1049fc930b0567c1e9d8",
+      "canonicalSha256": "0a24bcd35e0a5d7ca17e6c90a20421e575c117cdaa763f16fafa1bcf7742fe7b",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": ".github/workflows/publish_to_pypi.yml",
+      "mode": "100644",
+      "gitBlob": "e38daca87729dcb72059b5268bc41314ec8fab89",
+      "rawSha256": "6d1ce5859c23410a61508bb59353bfbc8206e85f72669cda68f7660dcfed1eb1",
+      "canonicalSha256": "433ebb45917be509b1510111de5769188eca6f9a0d87803867790800bce9dfa7",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": ".github/workflows/testing.yml",
+      "mode": "100644",
+      "gitBlob": "14778882d8c3a03063cdf18e8c5bff49b10e76e5",
+      "rawSha256": "620a40cca43338e140e9a9986be1801329bce6a197b92bf1f2556c19a0af7c29",
+      "canonicalSha256": "166b3e21f3517dac21ada9772221ea9af7f6e6188c1e3094078d1b915f19b5c0",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "gitBlob": "ce260e4091934ef100cb70f9f4f141fd78943339",
+      "rawSha256": "06cab10058c30cceb212f48a1be6338617ded2029da5c1957bb54d7aecb25dba",
+      "canonicalSha256": "ea1c7a0974fca112e159e834a02bae5b285fead05e24519199693a253aedbeca",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "mode": "100644",
+      "gitBlob": "140a689dafd2fe799a76eaceba2a082439110105",
+      "rawSha256": "81dfb56dd9fbac0b0324a05968787dfd7c21121f12e9f46b1e2a59d44aca4566",
+      "canonicalSha256": "128c08a4b919c51dd255c1a631f892361d6a044d5bc9b626c3bca4a93c788bf9",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "CHANGES.md",
+      "mode": "100644",
+      "gitBlob": "13bb5abe5b3cffade5dece5792cb0dd1070d14f3",
+      "rawSha256": "7f66dd8c352f478be58bbdba59a4d7c3ca70e22451e1c25eb45dc338c2689542",
+      "canonicalSha256": "54a30bf2e6e7cec7793a17684e1df8d8778f00e7b2c1b2c4aa89e662169d6eeb",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "gitBlob": "d112c4806aa90b4c911b360fa0ce1d0ee7c031ce",
+      "rawSha256": "fd05fc3bf600317284dbb8d0ae1a691832f9041f60f00c627d151b99b83a328c",
+      "canonicalSha256": "3029ea34173e9fdc233ad315dc6b100bd1ea71f529b1c1af97664a272fdc55f5",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "MANIFEST.in",
+      "mode": "100644",
+      "gitBlob": "74f5b2004382cc0940f84825045e2235ee3b1ed2",
+      "rawSha256": "9d653eb307496d01a049ae0298ff07a4de46ee8550a382518e9c6febd271534d",
+      "canonicalSha256": "b8d3eff8ece783c2f1d2068ccc439540ce6183bd36e7fccb5cc9a2830b408a33",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "gitBlob": "12df590384720b3330b9b78c5f7cee85ec7bbb03",
+      "rawSha256": "582b38e94ca4fab9d6ef0fee21ff40d9109462befc6a2a4d5bb513b394d254a8",
+      "canonicalSha256": "7e786da677630657d1e28696ec07fdeb642626c8431b2bfc68348d48939d568e",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "ci/install_coverage_subprocess_pth.py",
+      "mode": "100644",
+      "gitBlob": "a842ce961acfe5e678a230b30f06fd539f8b3051",
+      "rawSha256": "8ad1fde369315011b271b5bc42fa3ecd30d3893d7cdd2438f4f791880eaef5a8",
+      "canonicalSha256": "2d9aed47a6340dfe8eb2d948c726dadffc3c4a1542482d87110f52a11e818a4a",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "cloudpickle/__init__.py",
+      "mode": "100644",
+      "gitBlob": "bc99dacd1540c235845467b7ff45c0d9ed9a4d3c",
+      "rawSha256": "c8dcb60fbbc27f1d46f2da823b7b25342a5ac60ff3e9e288402ff08f603fd5ed",
+      "canonicalSha256": "c10a36b9ae1e6bec079c655283006e39f05d35bd95a24e1fffe98d6b9070e2a7",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "cloudpickle/cloudpickle.py",
+      "mode": "100644",
+      "gitBlob": "814a1346b6a6932290319159fb7db6015825e979",
+      "rawSha256": "5b08349f76974521763535486de57645dd3360a2dc77f045969801393aec2911",
+      "canonicalSha256": "110be30f5da5d8c96fab6b1780d7eec890e4613e8e84b1c5a3b63fc4e65e2f77",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "cloudpickle/cloudpickle_fast.py",
+      "mode": "100644",
+      "gitBlob": "20280f0ca354a691861ab6f17821bbeb04632003",
+      "rawSha256": "9996026ddec0f65823d24301d2c5e2cadcca1434eabe07fbb1e6eecf631c6f1e",
+      "canonicalSha256": "008e5929fd806cb3710fc957c8b0e9299cb3799da87c5b5d2b565616afde7357",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "codecov.yml",
+      "mode": "100644",
+      "gitBlob": "ce26d9a195894f5e0ca2b6d9a15c7832ccbea2b3",
+      "rawSha256": "d1f08d2a9551e34c6079995a7c0933b9128abebb58eb87243198447145f277e1",
+      "canonicalSha256": "4baf669ac1c04fbcc8c6ea4d0a5510bf55df5d1e88f887d6c24a4501da7370af",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "dev-requirements.txt",
+      "mode": "100644",
+      "gitBlob": "7735fd92057ce69e5faf0b3e1b5129578919cad1",
+      "rawSha256": "272770f3d91d11aad1996df31e07dff2c4aea6caa0e212492d170c2f4d752ef4",
+      "canonicalSha256": "abbc9a8dc316cb3cac648c8881a3825655c847df08ae29a8378a7e46a75c8d6c",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "dev/make-distribution.sh",
+      "mode": "100755",
+      "gitBlob": "87a9f771216f3c101ad26b8d117180b5c6390d9a",
+      "rawSha256": "a26fb10a54b66a43b50f687bd211f4b90f906df22dc892c158c0b0419ba1538e",
+      "canonicalSha256": "d42a25a590b9255ef00af5fc02809490813ce1a0d240e1161ec3bd337d98cf38",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "gitBlob": "ff8ecc23448ae7b330c0a43da4bbeb6458f6beae",
+      "rawSha256": "79ca9cccd72765c0c224fbc9cc8105fdd100cfc49fb757217a87225d1c67a5d3",
+      "canonicalSha256": "75ec0fb28204a0a1ce923bc263bf684956316877b9dccb13c37083b2303b0641",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/__init__.py",
+      "mode": "100644",
+      "gitBlob": "10cd20ec6e94d4be133198119edc4c7495a1514d",
+      "rawSha256": "ced377b7b0655001746f07f808a67fd51a89e1c8be4cc4f7b3d288f47d98f7d2",
+      "canonicalSha256": "1f188f29e3cd3f81585fcf5b4375835206d2e273d97a48bb546d23ee8a6435c3",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/cloudpickle_file_test.py",
+      "mode": "100644",
+      "gitBlob": "df46ab6a5b0062eab312e7b52f4e693cf5fa9f38",
+      "rawSha256": "1cac0746aa629904f76929132142775411d5a855bb01efe1a54fdae372f0ef04",
+      "canonicalSha256": "149b69d806d2653766e932f574ad33fbe25b60d30a65cccf062985ed54e5067f",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/cloudpickle_ipykernel_test.py",
+      "mode": "100644",
+      "gitBlob": "8a5cbfd72f40fe1928a69f8117ca989ce103ac70",
+      "rawSha256": "39bbcd60ddc41e08c81cfa03ae5630caf0b7105e526bf0ef20bb396503efab42",
+      "canonicalSha256": "39bbcd60ddc41e08c81cfa03ae5630caf0b7105e526bf0ef20bb396503efab42",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/cloudpickle_test.py",
+      "mode": "100644",
+      "gitBlob": "35daf2c8d87f1c0000672f80f672fad148e74e6c",
+      "rawSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9",
+      "canonicalSha256": "378290b1b29dd02fbdbbd1ea12a87a8199fc8a265a79603b6aa0d0217d50c5d9",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/cloudpickle_testpkg/_cloudpickle_testpkg/__init__.py",
+      "mode": "100644",
+      "gitBlob": "2051e4c0662d978de6df9a37e1bccc3cd96cf010",
+      "rawSha256": "9ef501a9ca5ab02e87f26d7e5d610a79b16f021452e93d92028670cd19d94832",
+      "canonicalSha256": "a02078bf9e155048f0063c13b7103da866d5095d8d896c5f27cb66af4a7711c7",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/cloudpickle_testpkg/_cloudpickle_testpkg/mod.py",
+      "mode": "100644",
+      "gitBlob": "3a46816403431024dc9f8f1ea800c1f4307354c9",
+      "rawSha256": "6044fea6baf76c736e229dde8ad5d3b885287d09b8885e5f1e0ec78524b0d69d",
+      "canonicalSha256": "a660f0969b3c46dc6ca1f4e792192a6cfa3a087fc9feb8f18d77d0e5130e3390",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/cloudpickle_testpkg/setup.py",
+      "mode": "100644",
+      "gitBlob": "403b69f7609a6299cbe6459ea96556ff0ff849e8",
+      "rawSha256": "a11dbc61ee8820fdca67473b7ae6e63a9e30c0417662847492ff07b8c8be663e",
+      "canonicalSha256": "036e802510efaef8816c678ed984cc42a424371a6f97010af8a4f970e2036025",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/generate_old_pickles.py",
+      "mode": "100644",
+      "gitBlob": "ff80777040c1ed8a307f0dc0473b4ba31338c0b0",
+      "rawSha256": "7614ad2d50aca8b69d0f34690ae471f1ae9ef02aea6c43dd88b9850c98f6fde5",
+      "canonicalSha256": "1e45b7b9a1b5c3b00dfc89238b84c8ccf346285e00edc82a58dd571034ff5bdb",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/mock_local_folder/mod.py",
+      "mode": "100644",
+      "gitBlob": "517d5013de93d874295d9c67120723c3e8736bb7",
+      "rawSha256": "c0ad693ca98ddd7307862cdf671cd5f369b528855019b66c342dfcf05c169361",
+      "canonicalSha256": "50b66fc5f632fa40248d6e25dcec5056e81ed1560d346b9fde360cfb0876908f",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/mock_local_folder/subfolder/submod.py",
+      "mode": "100644",
+      "gitBlob": "deebc1477809d036169561a8e9997d7fb6fc03f6",
+      "rawSha256": "93030bac66e6a046b263f5bacca64ee3cf0a4da63111c356f179063d3e23f971",
+      "canonicalSha256": "88ba81b886ad1c04b76d6fdc8ba83438acd3b52873ac08deeef49ac7fac114f9",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/class_with_type_hints.pkl",
+      "mode": "100644",
+      "gitBlob": "1153fcb5c072809278349049c4cbebb34a41ec64",
+      "rawSha256": "80c6299acf3d29c59b50b1a306188a9e149237145a899b3a92122aa2b4c1c3cd",
+      "canonicalSha256": "80c6299acf3d29c59b50b1a306188a9e149237145a899b3a92122aa2b4c1c3cd",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/cloudpickle_version.txt",
+      "mode": "100644",
+      "gitBlob": "c043eea7767eecb5567ebcbe8d671e45ef2833a8",
+      "rawSha256": "c11fc6674e6dad701cb3cbe3f3d8a6eccfc2781e8ad210b3b13964ce9c5974c9",
+      "canonicalSha256": "fe650098093fad42070e8a2cacfb216a6c416af57bd26dd6ff479fef69f8bc71",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/function_with_type_hints.pkl",
+      "mode": "100644",
+      "gitBlob": "dd1f6a55471bd89527170befaebd33d1f5673e0c",
+      "rawSha256": "042cc4d494d827ea4f4686bb0034e4018dc8a780f66fc7b5796ad588a41c0496",
+      "canonicalSha256": "042cc4d494d827ea4f4686bb0034e4018dc8a780f66fc7b5796ad588a41c0496",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/nested_function.pkl",
+      "mode": "100644",
+      "gitBlob": "50e430ef2ed5c0c17d0e746d840c7bb1dbc6ef3f",
+      "rawSha256": "5a9d48eae61e8c722b1f412387d1a6d1b45d2f2873fb30ae02082c2a954cdf8e",
+      "canonicalSha256": "5a9d48eae61e8c722b1f412387d1a6d1b45d2f2873fb30ae02082c2a954cdf8e",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/simple_class.pkl",
+      "mode": "100644",
+      "gitBlob": "cba8b326134fbe17689c32dd38ae3d63f676b07c",
+      "rawSha256": "af469d1e563251e72cd95563a38142858a8698a7876df435d9a0073975d085ac",
+      "canonicalSha256": "af469d1e563251e72cd95563a38142858a8698a7876df435d9a0073975d085ac",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/simple_enum.pkl",
+      "mode": "100644",
+      "gitBlob": "d331a249b2c8e0dfb7645f40481fa40f2a0fd456",
+      "rawSha256": "ed61c29d89a26de246f98d06579ea5638bd0ac7397ae5abaef881f05b4a39471",
+      "canonicalSha256": "ed61c29d89a26de246f98d06579ea5638bd0ac7397ae5abaef881f05b4a39471",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/simple_func.pkl",
+      "mode": "100644",
+      "gitBlob": "7e8053d90207f5f323d8f28aa6cfad1df6c1c088",
+      "rawSha256": "27edd3c50fdf5b3f57b5912ef8e658b414a0084bbf53ca0dd2739435752920a4",
+      "canonicalSha256": "27edd3c50fdf5b3f57b5912ef8e658b414a0084bbf53ca0dd2739435752920a4",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_310/simple_module.pkl",
+      "mode": "100644",
+      "gitBlob": "a4fcaff70cc8961be01b6217ad0bf68681e3367e",
+      "rawSha256": "6859732d244ccfc8ba22ac7c9db674ac05bb5ba567a7b2f21dabd43017f0ffb5",
+      "canonicalSha256": "6859732d244ccfc8ba22ac7c9db674ac05bb5ba567a7b2f21dabd43017f0ffb5",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/class_with_type_hints.pkl",
+      "mode": "100644",
+      "gitBlob": "91ad4c02750b062e21e80f1b6a6d6f121134fc2f",
+      "rawSha256": "810d5b064e77c1af2e014860849f9257f375b011480747cb600789d934a4eac8",
+      "canonicalSha256": "810d5b064e77c1af2e014860849f9257f375b011480747cb600789d934a4eac8",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/cloudpickle_version.txt",
+      "mode": "100644",
+      "gitBlob": "c043eea7767eecb5567ebcbe8d671e45ef2833a8",
+      "rawSha256": "c11fc6674e6dad701cb3cbe3f3d8a6eccfc2781e8ad210b3b13964ce9c5974c9",
+      "canonicalSha256": "fe650098093fad42070e8a2cacfb216a6c416af57bd26dd6ff479fef69f8bc71",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/function_with_type_hints.pkl",
+      "mode": "100644",
+      "gitBlob": "56c5e1839134aaa6d863285a6dfd2ba532610aec",
+      "rawSha256": "773a8077aa5f3687b809dad6db531347091397de25074f69c14d1ff082db817a",
+      "canonicalSha256": "773a8077aa5f3687b809dad6db531347091397de25074f69c14d1ff082db817a",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/nested_function.pkl",
+      "mode": "100644",
+      "gitBlob": "71579a85caf3f4ab7a26aa477b8c94514e2dab81",
+      "rawSha256": "0fbc75c857af0f08a5e4d55f71b82a562028039af4de3b0c7f1378a8ccd6f4e2",
+      "canonicalSha256": "0fbc75c857af0f08a5e4d55f71b82a562028039af4de3b0c7f1378a8ccd6f4e2",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/simple_class.pkl",
+      "mode": "100644",
+      "gitBlob": "1c41f5346504ce06af8d8835732c50e8ab60dd88",
+      "rawSha256": "88a731d557a5380878f355ffbb953866641a29278a3e9f38e316384deb3878dd",
+      "canonicalSha256": "88a731d557a5380878f355ffbb953866641a29278a3e9f38e316384deb3878dd",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/simple_enum.pkl",
+      "mode": "100644",
+      "gitBlob": "1e9dcd0621b1a253ff5c1e5b856b50149dabe060",
+      "rawSha256": "98d1f8f38ac4ad9e246b33b3f84e94a488f410df97a69d92185be08a63300df1",
+      "canonicalSha256": "98d1f8f38ac4ad9e246b33b3f84e94a488f410df97a69d92185be08a63300df1",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/simple_func.pkl",
+      "mode": "100644",
+      "gitBlob": "7319d359a5e8f3a982e2beda4c67d3912dfb3996",
+      "rawSha256": "f5e6c551f70e1038ce7a69c1215f4e12a8abcbcae78f5ca373697b7dfc23bff7",
+      "canonicalSha256": "f5e6c551f70e1038ce7a69c1215f4e12a8abcbcae78f5ca373697b7dfc23bff7",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_311/simple_module.pkl",
+      "mode": "100644",
+      "gitBlob": "2f8f9f9557d424b8e4ed0d9b355b0c612bce31eb",
+      "rawSha256": "e6d8ebaaf87df6ff8bd31b3d800a274eb214c43604b420eec8f4ec8bb82fc4d8",
+      "canonicalSha256": "e6d8ebaaf87df6ff8bd31b3d800a274eb214c43604b420eec8f4ec8bb82fc4d8",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/class_with_type_hints.pkl",
+      "mode": "100644",
+      "gitBlob": "8b1b613b51a82c85fe249693997e7bff456189d6",
+      "rawSha256": "235042d4e1de6726716b1fade172ede91976e221db50b42c965f42b3abe47f16",
+      "canonicalSha256": "235042d4e1de6726716b1fade172ede91976e221db50b42c965f42b3abe47f16",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/cloudpickle_version.txt",
+      "mode": "100644",
+      "gitBlob": "347f5833ee6db7495cce808040501bf2c96269a9",
+      "rawSha256": "e031d4452dc5efd091e2467b55e90ac2a30d02e9316f2e45123d812d89b1093b",
+      "canonicalSha256": "7d072b48526b023950e4c48db01e8c273554a6401119f5691e7589ba9bc65d9d",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/function_with_type_hints.pkl",
+      "mode": "100644",
+      "gitBlob": "0f6019d4f0058a1b9874b7bc2e86bbd00b6b5e4f",
+      "rawSha256": "15ed26ed960ab65f208a0e52efd78dd9a54277ca81a96c1a2ff192417097833a",
+      "canonicalSha256": "15ed26ed960ab65f208a0e52efd78dd9a54277ca81a96c1a2ff192417097833a",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/nested_function.pkl",
+      "mode": "100644",
+      "gitBlob": "1fe67c53a35d801a7e870793fe0e31632a253db1",
+      "rawSha256": "a9c31055c4487cac92dcf3d8fe38005ada101310d5909227bdc30ea0afefd1c8",
+      "canonicalSha256": "a9c31055c4487cac92dcf3d8fe38005ada101310d5909227bdc30ea0afefd1c8",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/simple_class.pkl",
+      "mode": "100644",
+      "gitBlob": "4ca72f5c50d09ea63a0d8114f84c18c5e9350c7d",
+      "rawSha256": "66fc938e13840fe2c4ae2709e24b75913e8bfd5335d37596dab18aa17d7ab59f",
+      "canonicalSha256": "66fc938e13840fe2c4ae2709e24b75913e8bfd5335d37596dab18aa17d7ab59f",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/simple_enum.pkl",
+      "mode": "100644",
+      "gitBlob": "62226000178be818cc0fc0fb4e7d151939b0693c",
+      "rawSha256": "bb189bca42e1c9614752826e17e4b633e4430491ef92f8f4f51d9040deab2196",
+      "canonicalSha256": "bb189bca42e1c9614752826e17e4b633e4430491ef92f8f4f51d9040deab2196",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/simple_func.pkl",
+      "mode": "100644",
+      "gitBlob": "45c99738525fc99596c1d8e83ff813a7a97c5471",
+      "rawSha256": "b48791d501ca0f2262de975c1caae00a5d2001d5641b3baf85656027b03d845f",
+      "canonicalSha256": "b48791d501ca0f2262de975c1caae00a5d2001d5641b3baf85656027b03d845f",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_38/simple_module.pkl",
+      "mode": "100644",
+      "gitBlob": "a5f850623abe2833cca4ae844ca5eb889f83e4f3",
+      "rawSha256": "53c8aa261daeed33eb069f3900aebd422fa940f74639f4520fb534763a04d594",
+      "canonicalSha256": "53c8aa261daeed33eb069f3900aebd422fa940f74639f4520fb534763a04d594",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/class_with_type_hints.pkl",
+      "mode": "100644",
+      "gitBlob": "f35182765b99002cb4df44f66e64f1c0282b8919",
+      "rawSha256": "7eaf4c52d15b662b7c083d2a68666aab3f09b03fa3ea456afbdea83357847d64",
+      "canonicalSha256": "7eaf4c52d15b662b7c083d2a68666aab3f09b03fa3ea456afbdea83357847d64",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/cloudpickle_version.txt",
+      "mode": "100644",
+      "gitBlob": "347f5833ee6db7495cce808040501bf2c96269a9",
+      "rawSha256": "e031d4452dc5efd091e2467b55e90ac2a30d02e9316f2e45123d812d89b1093b",
+      "canonicalSha256": "7d072b48526b023950e4c48db01e8c273554a6401119f5691e7589ba9bc65d9d",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/function_with_type_hints.pkl",
+      "mode": "100644",
+      "gitBlob": "8d9591a1bd7325179256f298ee0a5e92f3077918",
+      "rawSha256": "27f6b1f5dac280e30452b825584dc4962cf15ebbd7995c7db641905258339d32",
+      "canonicalSha256": "27f6b1f5dac280e30452b825584dc4962cf15ebbd7995c7db641905258339d32",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/nested_function.pkl",
+      "mode": "100644",
+      "gitBlob": "db284fe24de58489d7296430f7f1e73f4e0a9ea0",
+      "rawSha256": "f9ed3bd0fa32888077e59f4d4e3f17be86238e5fe785c90e76b4fd7f72fa97b4",
+      "canonicalSha256": "f9ed3bd0fa32888077e59f4d4e3f17be86238e5fe785c90e76b4fd7f72fa97b4",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/simple_class.pkl",
+      "mode": "100644",
+      "gitBlob": "026737e1fc4dbbd8ee12ba986f54adddbc5c1c1c",
+      "rawSha256": "c264c7b96851258125bc5408b81507a40748f8dbf1acc5ed8b85f779b6569e6e",
+      "canonicalSha256": "c264c7b96851258125bc5408b81507a40748f8dbf1acc5ed8b85f779b6569e6e",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/simple_enum.pkl",
+      "mode": "100644",
+      "gitBlob": "4e49b68540e41f6650f67ee38dbb6751aed5598a",
+      "rawSha256": "42db1a618885d4835b966648ff815e6263f5921984fdf6a10f3f5134210e6088",
+      "canonicalSha256": "42db1a618885d4835b966648ff815e6263f5921984fdf6a10f3f5134210e6088",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/simple_func.pkl",
+      "mode": "100644",
+      "gitBlob": "34d515dc3158b0f9e57588382af9cc12e72fd08e",
+      "rawSha256": "c7846630f75ae98f853f9313e3a8ee02ebd1173669cc675b328e50394eaa67e0",
+      "canonicalSha256": "c7846630f75ae98f853f9313e3a8ee02ebd1173669cc675b328e50394eaa67e0",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/old_pickles/cpython_39/simple_module.pkl",
+      "mode": "100644",
+      "gitBlob": "a5f850623abe2833cca4ae844ca5eb889f83e4f3",
+      "rawSha256": "53c8aa261daeed33eb069f3900aebd422fa940f74639f4520fb534763a04d594",
+      "canonicalSha256": "53c8aa261daeed33eb069f3900aebd422fa940f74639f4520fb534763a04d594",
+      "rawEqualsCanonical": true,
+      "onlyCRLFCheckoutDifference": false,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/test_backward_compat.py",
+      "mode": "100644",
+      "gitBlob": "1d1d70a92a5369e427312627e238c445278ef239",
+      "rawSha256": "459e9097e319a22961d177a37637b90aab206fd2d2902db6dc04e04417b1bf26",
+      "canonicalSha256": "b9ed82e7e38ebb09c0c3dc609c0fd18ba274d9ecc001fdb25204e1735c2771a7",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tests/testutils.py",
+      "mode": "100644",
+      "gitBlob": "f90bb515cd60f6e33abf36640eeb37901d050e78",
+      "rawSha256": "575d3430730294be191badc39ea7df390ef0ea84d586bd63865fe87c7c9776ea",
+      "canonicalSha256": "2f18efa7374e752619f7ce2c12faee1557d34637bef0fa38e8ae34c6734aad1e",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    },
+    {
+      "path": "tox.ini",
+      "mode": "100644",
+      "gitBlob": "5c5ec7e22fdfc7a982fc21f93c7906320bcd1c39",
+      "rawSha256": "c4b8919097050c647c8ab897c105e5a5d8cb4dbc8cead08a231d0ff8277b036d",
+      "canonicalSha256": "97f48a9a0892b07925429c434cdc692213ad0ee9490af337c549ef36a450484b",
+      "rawEqualsCanonical": false,
+      "onlyCRLFCheckoutDifference": true,
+      "otherDifference": false
+    }
+  ]
+}
